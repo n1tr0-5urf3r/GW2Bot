@@ -11,6 +11,7 @@ from .achievements import AchievementsMixin
 from .api import ApiMixin
 from .characters import CharactersMixin
 from .commerce import CommerceMixin
+from .crafting import CraftingMixin
 from .daily import DailyMixin
 from .database import DatabaseMixin
 from .events import EventsMixin
@@ -26,7 +27,7 @@ from .exceptions import APIKeyError, APIError, APIInvalidKey, APIInactiveError
 
 
 class GuildWars2(AccountMixin, AchievementsMixin, ApiMixin, CharactersMixin,
-                 CommerceMixin, DailyMixin, DatabaseMixin, EventsMixin,
+                 CommerceMixin, CraftingMixin, DailyMixin, DatabaseMixin, EventsMixin,
                  GuildMixin, GuildManageMixin, KeyMixin, MiscMixin,
                  NotiifiersMixin, PvpMixin, WalletMixin, WvwMixin):
     """Guild Wars 2 commands"""

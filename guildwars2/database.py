@@ -183,6 +183,9 @@ class DatabaseMixin:
     async def fetch_item(self, item):
         return await self.db.items.find_one({"_id": item})
 
+    async def fetch_recipe(self, recipe):
+        return await self.db.recipes.find_one({"_id": recipe})
+
     async def fetch_key(self, user, scopes=None):
         doc = await self.bot.database.get_user(user, self)
         if not doc or "key" not in doc or not doc["key"]:
