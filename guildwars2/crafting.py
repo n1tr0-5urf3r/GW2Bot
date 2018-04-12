@@ -36,7 +36,6 @@ class CraftingMixin:
 
         for ingredient in recipe_doc["ingredients"]:
             ing_id = ingredient["item_id"]
-            
 
         #for k,v in recipe_doc.items():
         #    await ctx.send("{0},{1}".format(k,v))
